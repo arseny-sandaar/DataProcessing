@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Stock on Canvas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Living Stock Dynamics</h1>
+        <form id="generator-form">
+            <label for="number">Enter number of living stock:</label>
+            <input type="number" min="0" max="100000" id="number" name="number" required>
+            <br>
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">Generate movement</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
