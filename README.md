@@ -27,4 +27,5 @@ To simulate herd the dots are expected to be within certain region, e.g., ellips
 ### Access the Application
 
 Open your browser and go to `http://127.0.0.1:5000/`.
+
 Docker image: https://hub.docker.com/repository/docker/arsenysandaar/living-stock-dynamics/general
